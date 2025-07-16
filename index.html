@@ -575,79 +575,134 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section-bg">
+    <section id="portfolio" class="portfolio section-bg" style="padding: 60px 0;">
       <div class="container">
         <div class="section-title">
-          <h2>Projects</h2>
+          <h2 style="text-align: center; font-size: 32px; margin-bottom: 40px;">Projects</h2>
         </div>
 
-        <div class="resume-item">
-          <h4 class="highlight-blue">Churner Prediction</h4>
-          <p><strong>Skills:</strong> SQL, Data Gathering, Data Cleaning, Feature Engineering, RandomForest, Python, Model Building</p>
-          <ul>
-            <li>Built a supervised ML model to predict customer churn based on 5–6 months of behavioral data.</li>
-          </ul>
-        </div>
+        <style>
+          .project-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+          }
 
-        <div class="resume-item">
-          <h4 class="highlight-blue">HVC Dropper Prediction</h4>
-          <p><strong>Skills:</strong> SQL, Data Gathering, Data Cleaning, Feature Engineering, RandomForest, Python, Model Building</p>
-          <ul>
-            <li>Designed a supervised ML model to predict high-value customer drop-off using historical service usage patterns.</li>
-          </ul>
-        </div>
+          @media (min-width: 768px) {
+            .project-grid {
+              grid-template-columns: 1fr 1fr;
+            }
+          }
 
-        <div class="resume-item">
-          <h4 class="highlight-blue">Credit Scoring</h4>
-          <p><strong>Skills:</strong> Python, SQL, Data Gathering, Data Cleaning, Feature Engineering, Rule-Based Model, K-Means Clustering</p>
-          <ul>
-            <li>Developed a hybrid credit scoring system combining rule-based logic and k-means clustering to segment users by risk category.</li>
-          </ul>
-        </div>
+          .project-card {
+            background: #fff;
+            padding: 1.5rem;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+          }
 
-        <div class="resume-item">
-          <h4 class="highlight-blue">Revenue Prediction</h4>
-          <p><strong>Skills:</strong> SQL, Data Gathering, Data Cleaning, Prophet Model</p>
-          <ul>
-            <li>Built a forecasting model using Facebook Prophet to analyze and predict future revenue trends with seasonality and holiday adjustments.</li>
-          </ul>
-        </div>
+          .project-card:hover {
+            transform: translateY(-5px);
+          }
 
-        <div class="resume-item">
-          <h4 class="highlight-blue">ChatBot</h4>
-          <p><strong>Skills:</strong> LLaMA Model, Vectorization, Similarity Search, Python</p>
-          <ul>
-            <li>Created a local chatbot using a pre-trained LLaMA model capable of learning from custom files and answering queries via similarity search.</li>
-          </ul>
-        </div>
+          .highlight-blue {
+            color: #007bff;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
 
-        <div class="resume-item">
-          <h4 class="highlight-blue">Sentiment Analysis for Business Reviews</h4>
-          <p><strong>Skills:</strong> NLP, CNN, BERT, Transformers, Python, Flask, Docker</p>
-          <ul>
-            <li>Built CNN and BERT-based models to classify sentiments in product reviews with up to 91% accuracy.</li>
-            <li>Developed a user-friendly web interface with Python, Flask, and React for real-time sentiment input and visualization.</li>
-            <li><a href="https://github.com/Bibekpdl1/Sentiment-Analysis-For-Business-Review" target="_blank" rel="noopener">GitHub Repository</a></li>
-          </ul>
-        </div>
+          .project-card p {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #555;
+          }
 
-        <div class="resume-item">
-          <h4 class="highlight-blue">Brain Tumor Detection</h4>
-          <p><strong>Skills:</strong> Image Processing, CNN, Python, Flask</p>
-          <ul>
-            <li>Developed a CNN model for detecting brain tumors from MRI images with 93% accuracy.</li>
-            <li>Deployed the model using FastAPI and hosted on Heroku with a user interface in HTML/CSS.</li>
-            <li><a href="https://github.com/Bibekpdl1/Brain-Tumor-Detection" target="_blank" rel="noopener">GitHub Repository</a></li>
-          </ul>
-        </div>
+          .project-card ul {
+            padding-left: 1.25rem;
+            font-size: 14px;
+            color: #333;
+          }
 
-        <div class="resume-item">
-          <h4 class="highlight-blue">CVD Detection</h4>
-          <p><strong>Skills:</strong> Data Cleaning, RandomForest, Python, Flask</p>
-          <ul>
-            <li>Built a RandomForest model to predict cardiovascular disease likelihood using patient health metrics.</li>
-            <li><a href="https://github.com/Bibekpdl1/CVD-Detection" target="_blank" rel="noopener">GitHub Repository</a></li>
-          </ul>
+          .project-card a {
+            color: #007bff;
+            text-decoration: underline;
+            font-size: 14px;
+          }
+        </style>
+
+        <div class="project-grid">
+
+          <div class="project-card">
+            <h4 class="highlight-blue">Churner Prediction</h4>
+            <p><strong>Skills:</strong> SQL, Data Gathering, Data Cleaning, Feature Engineering, RandomForest, Python, Model Building</p>
+            <ul>
+              <li>Built a supervised ML model to predict customer churn based on 5–6 months of behavioral data.</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <h4 class="highlight-blue">HVC Dropper Prediction</h4>
+            <p><strong>Skills:</strong> SQL, Data Gathering, Data Cleaning, Feature Engineering, RandomForest, Python, Model Building</p>
+            <ul>
+              <li>Designed a supervised ML model to predict high-value customer drop-off using historical service usage patterns.</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <h4 class="highlight-blue">Credit Scoring</h4>
+            <p><strong>Skills:</strong> Python, SQL, Data Gathering, Data Cleaning, Feature Engineering, Rule-Based Model, K-Means Clustering</p>
+            <ul>
+              <li>Developed a hybrid credit scoring system combining rule-based logic and k-means clustering to segment users by risk category.</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <h4 class="highlight-blue">Revenue Prediction</h4>
+            <p><strong>Skills:</strong> SQL, Data Gathering, Data Cleaning, Prophet Model</p>
+            <ul>
+              <li>Built a forecasting model using Facebook Prophet to analyze and predict future revenue trends with seasonality and holiday adjustments.</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <h4 class="highlight-blue">ChatBot</h4>
+            <p><strong>Skills:</strong> LLaMA Model, Vectorization, Similarity Search, Python</p>
+            <ul>
+              <li>Created a local chatbot using a pre-trained LLaMA model capable of learning from custom files and answering queries via similarity search.</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <h4 class="highlight-blue">Sentiment Analysis for Business Reviews</h4>
+            <p><strong>Skills:</strong> NLP, CNN, BERT, Transformers, Python, Flask, Docker</p>
+            <ul>
+              <li>Built CNN and BERT-based models to classify sentiments in product reviews with up to 91% accuracy.</li>
+              <li>Developed a user-friendly web interface with Python, Flask, and React for real-time sentiment input and visualization.</li>
+              <li><a href="https://github.com/Bibekpdl1/Sentiment-Analysis-For-Business-Review" target="_blank" rel="noopener">GitHub Repository</a></li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <h4 class="highlight-blue">Brain Tumor Detection</h4>
+            <p><strong>Skills:</strong> Image Processing, CNN, Python, Flask</p>
+            <ul>
+              <li>Developed a CNN model for detecting brain tumors from MRI images with 93% accuracy.</li>
+              <li>Deployed the model using FastAPI and hosted on Heroku with a user interface in HTML/CSS.</li>
+              <li><a href="https://github.com/Bibekpdl1/Brain-Tumor-Detection" target="_blank" rel="noopener">GitHub Repository</a></li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <h4 class="highlight-blue">CVD Detection</h4>
+            <p><strong>Skills:</strong> Data Cleaning, RandomForest, Python, Flask</p>
+            <ul>
+              <li>Built a RandomForest model to predict cardiovascular disease likelihood using patient health metrics.</li>
+              <li><a href="https://github.com/Bibekpdl1/CVD-Detection" target="_blank" rel="noopener">GitHub Repository</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -755,7 +810,7 @@
                 <span>Big Data</span>
               </div>
               <div class="skill-card basic">
-                <i class="bx bx-flask"></i>
+                <i class="bx bx-git-branch"></i>
                 <span>MLflow</span>
               </div>
               <div class="skill-card basic">
@@ -777,7 +832,7 @@
             </div>
             <div class="skills-grid">
               <div class="skill-card advanced">
-                <i class="bx bxl-tableau"></i>
+                <i class="bx bx-bar-chart-alt-2"></i>
                 <span>Tableau</span>
               </div>
               <div class="skill-card advanced">
